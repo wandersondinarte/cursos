@@ -1,2 +1,2 @@
 # Cursos
-Informações e código-fonte dos cursos realiziados.
+Informações e código-fonte dos cursos realizados.
