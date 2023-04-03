@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+<script>
+  var anoInicial = 1500;
+  var mediaIdade = 28;
+  var anoAtual = new Date().getFullYear();
+  var quantidadeDeGeracoes = Math.floor((anoAtual - anoInicial ) / mediaIdade);
+
+  function mostrarResultado(){
+    document.getElementById("resultado").innerHTML = '<b>Se passaram '+quantidadeDeGeracoes+' gerações.</b>';
+  }
+</script>
+<body>
+
+  <h1>O problema das Gerações</h1>
+  <p>Em média, um casal tem filhos quando atinge a idade de 28 anos.</p>
+  <p>Seguindo essa média, se os portugueses chegaram em 1500 no Brasil, então, a primeira geração de brasileiros surgiu em 1528, a segunda em 1556 e assim por diante.</p>
+  <p>Desde 1500 até o ano atual, quantas gerações se passaram?</p>
+  <p id="resultado"></p>
+
+  <script>
+    mostrarResultado();
+  </script>
+  
+</body>
