@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+    document.write("<br><br>");
+}
+
+function mostra(frase) {
+    document.write(frase);
+    pulaLinha();
+}
+
+var anoCopa= 1930;
+var anoAtual = new Date().getFullYear();
+
+while( anoCopa <= anoAtual ){
+
+    if( anoCopa === 1942 || anoCopa === 1946){
+        mostra('No ano de '+anoCopa+' <b>não</b> teve Copa do Mundo de Futebol, devido à Segunda Guerra Mundial.');
+    } else {
+        mostra('No ano de '+anoCopa+' teve Copa do Mundo de Futebol.');
+    }
+    anoCopa = anoCopa + 4;
+
+}
+
+</script>
